@@ -15,7 +15,7 @@ Hardware:
 
 Planning to grow to double the panels and another battery, eventually.
 
-### Projlect log
+### Project log
 
 ## Solar webserver project
 * 1 spare UPS battery (unbranded), 9Ah. For something like a solar webserver.
