@@ -18,9 +18,12 @@ Planning to grow to double the panels and another battery, eventually.
 ### Project log
 
 ## Solar webserver project
-* 1 spare UPS battery (unbranded), 9Ah. For something like a solar webserver.
-* 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) - again, likely for a solar webserver. May break out into its own project.
+* 1 spare UPS battery (unbranded), 9Ah. 
+* 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) - again, likely for a solar webserver. 
 
+Inspired by getting the spare UPS battery which didn't fit my UPS. I could not return it, so why not move my "personal cloud" Raspberry Pi to solar power and a battery? I don't use the RPi much at night anyways.
+
+### Project log
 
 
 ## License
