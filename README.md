@@ -25,6 +25,8 @@ Inspired by getting the spare UPS battery which didn't fit my UPS. I could not r
 
 ### Project log
 
+### References
+- [Low Tech Magazine's solar-powered ARM webserver](https://homebrewserver.club/low-tech-website-howto.html)
 
 ## License
 
