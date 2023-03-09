@@ -13,6 +13,10 @@ Hardware:
 * 1 [Renogy Deep Cycle AGM Battery 12 Volt 200Ah](https://www.renogy.com/deep-cycle-agm-battery-12-volt-200ah/)
 * 1 [Renogy 2000W 12V Pure Sine Wave Inverter](https://www.renogy.com/2000w-12v-pure-sine-wave-inverter/)
 
+Planning to grow to double the panels and another battery, eventually.
+
+### Projlect log
+
 ## Solar webserver project
 * 1 spare UPS battery (unbranded), 9Ah. For something like a solar webserver.
 * 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) - again, likely for a solar webserver. May break out into its own project.
