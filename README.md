@@ -9,11 +9,15 @@ Keeping all the links and specs in one place should also help me in the future t
 Hardware:
 * 2 [Renogy 100 watt solar panels](https://www.renogy.com/100-watt-12-volt-monocrystalline-solar-panel-compact-design/)
 * 1 [Renogy 40A MPPT charge controller](https://www.renogy.com/rover-li-40-amp-mppt-solar-charge-controller/)
+* 1 [Renogy cable kit, 20ft](https://www.amazon.com/Renogy-Accessory-Systems-Kit-Connector/dp/B091KTG9WX/) (includes Z-brackets)
+* 1 [Renogy Deep Cycle AGM Battery 12 Volt 200Ah](https://www.renogy.com/deep-cycle-agm-battery-12-volt-200ah/)
+* 1 [Renogy 2000W 12V Pure Sine Wave Inverter](https://www.renogy.com/2000w-12v-pure-sine-wave-inverter/)
+
+## Solar webserver project
 * 1 spare UPS battery (unbranded), 9Ah. For something like a solar webserver.
 * 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) - again, likely for a solar webserver. May break out into its own project.
 
-Need to buy:
-* [Renogy cable kit, 20ft](https://www.amazon.com/Renogy-Accessory-Systems-Kit-Connector/dp/B091KTG9WX/)
+
 
 ## License
 
