@@ -16,6 +16,9 @@ Hardware:
 Planning to grow to double the panels and another battery, eventually.
 
 ### Project log
+* 2023-03-14 heavy (130lb!) battery was delivered. 
+
+**Current status**: Waiting for the snow to melt. 
 
 ## Solar webserver project
 * 1 spare UPS battery (unbranded), 9Ah. 
