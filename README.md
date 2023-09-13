@@ -16,12 +16,12 @@ Hardware:
 Planning to grow to double the panels and another battery, eventually.
 
 ### Project log
-* 2023-03-14 heavy (130lb!) battery was delivered. 
+* 2023-03-14 heavy (130lb!) battery was delivered.
 
-**Current status**: Waiting for the snow to melt. 
+**Current status**: Waiting on me.
 
 ## Solar webserver project
-* 1 spare UPS battery (unbranded), 9Ah. 
+* 1 spare UPS battery (unbranded), 9Ah.
 * 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) - again, likely for a solar webserver.
 * 1 [Renogy 50 watt solar panel](https://www.renogy.com/50-watt-12-volt-monocrystalline-solar-panel/)
 * 1 Lilygo T-beam for LoRa communications
@@ -31,9 +31,16 @@ Inspired by getting the spare UPS battery which didn't fit my UPS. I could not r
 I also want to hook this up as a Meshtastic internet bridge, with the Lilygo T-beam, so that I can have a repeater/server for LoRa chatting.
 
 ### Project log
+* 2023-09-12 - Renogy solar panel is here
 
 ### References
 - [Low Tech Magazine's solar-powered ARM webserver](https://homebrewserver.club/low-tech-website-howto.html)
+
+## Low-power ARM NAS (Network Attached Storage)
+
+I am using a RockPro64 board, a SATA riser, and a hot swap SATA cage to build a small, low-power NAS box.
+
+
 
 ## License
 
