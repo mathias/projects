@@ -38,7 +38,7 @@ I also want to hook this up as a Meshtastic internet bridge, with the Lilygo T-b
 
 ## Low-power ARM NAS (Network Attached Storage)
 
-I am using a RockPro64 board, a SATA riser, and a hot swap SATA cage to build a small, low-power NAS box.
+I am using a [RockPro64 board](https://www.pine64.org/rockpro64/), a SATA riser, and a [hot swap SATA cage](https://www.rosewill.com/rosewill-rsv-sata-cage-34-hard-disk-drive-cage/p/9SIA072GJ92556) to build a small, low-power NAS box.
 
 
 
