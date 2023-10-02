@@ -24,14 +24,19 @@ Planning to grow to double the panels and another battery, eventually.
 * 1 spare UPS battery (unbranded), 9Ah.
 * 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) - again, likely for a solar webserver.
 * 1 [Renogy 50 watt solar panel](https://www.renogy.com/50-watt-12-volt-monocrystalline-solar-panel/)
-* 1 Lilygo T-beam for LoRa communications
+* 1 GL.iNet GL-AR300M16-Ext travel router
+
+### Misc parts
+* Terminal blocks (I used Glarks 70Pcs set)
+* Outdor junction box with hinged cover (waterproof/dustproof) -- to fit your UPS battery.
 
 Inspired by getting the spare UPS battery which didn't fit my UPS. I could not return it, so why not move my "personal cloud" Raspberry Pi to solar power and a battery? I don't use the RPi much at night anyways.
 
-I also want to hook this up as a Meshtastic internet bridge, with the Lilygo T-beam, so that I can have a repeater/server for LoRa chatting.
 
 ### Project log
 * 2023-09-12 - Renogy solar panel is here
+* 2023-10-01 - First time charging the battery, now that I had terminal blocks and crimping tools to step down the 12AWG solar cables to smaller wires that can be inserted into the MPPT charger.
+* 2023-10-02 - travel router is here, can begin flashing it with OpenWRT and documenting the setup steps for that.
 
 ### References
 - [Low Tech Magazine's solar-powered ARM webserver](https://homebrewserver.club/low-tech-website-howto.html)
