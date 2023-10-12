@@ -22,13 +22,13 @@ Planning to grow to double the panels and another battery, eventually.
 
 ## Solar webserver project
 * 1 spare UPS battery (unbranded), 9Ah.
-* 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) - again, likely for a solar webserver.
+* 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) 
 * 1 [Renogy 50 watt solar panel](https://www.renogy.com/50-watt-12-volt-monocrystalline-solar-panel/)
 * 1 GL.iNet GL-AR300M16-Ext travel router
 
 ### Misc parts
-* Terminal blocks (I used Glarks 70Pcs set)
-* Outdor junction box with hinged cover (waterproof/dustproof) -- to fit your UPS battery.
+* Terminal blocks: Glarks 70Pcs set
+* Outdor junction box with hinged cover (waterproof/dustproof) -- to fit the UPS battery.
 
 Inspired by getting the spare UPS battery which didn't fit my UPS. I could not return it, so why not move my "personal cloud" Raspberry Pi to solar power and a battery? I don't use the RPi much at night anyways.
 
