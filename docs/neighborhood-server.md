@@ -21,19 +21,54 @@ Download Raspbian 64-bit Lite and flash it using something like Popsicle USB Fla
 
 The Raspberry Pi will generate SSH keys, resize the disk to fill the space, and then reboot.
 
+The Pi will prompt you to create a user and set its password. Log in as that user.
 
+Use `nmcli` to set up the wifi connection to the real house wifi for the time being.
 
+```
+nmcli dev status
+nmcli radio wifi on
+nmcli dev wifi list # find your network name
+sudo nmcli dev wifi connect $YOUR_WIFI password "$PASSWORD"
+```
 
+Verify it is working with `ping google.com`
+
+Update the Pi and set some initial config:
+
+```
+sudo apt-get update && sudo apt-get upgrade -y
+sudo raspi-config
+``
+
+In raspi-config:
+* Advanced - Resize filesystem (just in case it hsan't done it)
+* Update
+* Interface Options - SSH - Enable
+
+"Finish" and it should drop back at the CLI. Run `sudo reboot` to pick up any new kernels that were installed in the `apt-get upgrade` earlier.
+
+When it reboots, log in again.
+
+```
+ssh-keygen
+sudo apt-get install curl
+curl https://github.com/mathias.keys > .ssh/authorized_keys
+```
+
+At this point I should be able to `ssh mathias@<IP>` from my laptop and connect to the Pi remotely over SSH.
+
+Preserve my sanity: `sudo apt-get install vim git`
 
 ## Wireless router setup
+
+TODO
 
 ## Physical assembly
 
 3D print a case for easier mounting of the Raspberry Pi Zero 2W: https://www.printables.com/model/34849-raspberry-pi-zero-slim-case-with-mounting-tabs
 
 Solder the 40-pin GPIO header to the Raspberry Pi Zero 2W -- we'll use it to communicate with the solar charger PCB later.
-
-
 
 ## License
 
