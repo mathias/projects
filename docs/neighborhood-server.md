@@ -39,7 +39,7 @@ Update the Pi and set some initial config:
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 sudo raspi-config
-``
+```
 
 In raspi-config:
 * Advanced - Resize filesystem (just in case it hsan't done it)
