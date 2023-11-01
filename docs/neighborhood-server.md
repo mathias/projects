@@ -70,6 +70,20 @@ TODO
 
 Solder the 40-pin GPIO header to the Raspberry Pi Zero 2W -- we'll use it to communicate with the solar charger PCB later.
 
+## Errata
+
+### Power usage research
+
+Used a little USB power monitor to see how many watts each dev board used at idle and (if possible) running stress-ng from s-tui. (`s-tui` installed with `sudo apt install s-tui` and run with sudo to stress test.)
+
+| SBC                      | Idle watts (with wifi on) | Idle watts (with ethernet)                          | s-tui stress test watts     |
+| ---                      | ---                       | ---                                                 | ---                         |
+| Pi Zero 2W               | 1.5 watts                 | N/A                                                 | 3.3 watts                   |
+| RPi 3                    | N/A                       | 2.2 watts                                           |                             |
+| Mango Pi MQ Pro (RISC-V) |                           |                                                     |                             |
+| Milk V Duo               | N/A no wifi               | 1.2 watts (don't have ethernet expansion board yet) | N/A can't install currently |
+
+
 ## License
 
 This work is licensed under [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
