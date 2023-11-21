@@ -41,12 +41,22 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo raspi-config
 ```
 
+It should pick up at least Linux kernel 6.1.x or later, and whatever Pi firmware goes with that kernel.
+
 In raspi-config:
 * Advanced - Resize filesystem (just in case it hsan't done it)
 * Update
 * Interface Options - SSH - Enable
 
-"Finish" and it should drop back at the CLI. Run `sudo reboot` to pick up any new kernels that were installed in the `apt-get upgrade` earlier.
+"Finish" and it should drop back at the CLI.
+
+One more thing -- we want to turn on I2C so that we can communicate with the MakerPower board. Edit `/boot/config.txt` and uncomment this line:
+
+```
+#dtparam=i2c_arm=on
+```
+
+Run `sudo reboot` to pick up any new kernels that were installed in the `apt-get upgrade` earlier.
 
 When it reboots, log in again.
 
@@ -58,7 +68,15 @@ curl https://github.com/mathias.keys > .ssh/authorized_keys
 
 At this point I should be able to `ssh mathias@<IP>` from my laptop and connect to the Pi remotely over SSH.
 
-Preserve my sanity: `sudo apt-get install vim git`
+Tools needed for setting up the basic webserver: `sudo apt-get install vim git`
+
+During development I also installed the following for more tooling: `sudo apt install htop tmux` and ran the setup script from https://rustup.rs
+
+### Verify GPIO with Rust
+
+Cross-compile https://github.com/mathias/pi-makerpower-gpio and copy the executable to the Raspberry Pi. Verify the I2C connections and alert pin are connected to the MakerPower board, then run it.
+
+TODO: finish the converters for `pi-makerpower-gpio` so that we get actual values for voltages, etc.
 
 ## Wireless router setup
 
@@ -76,13 +94,18 @@ Solder the 40-pin GPIO header to the Raspberry Pi Zero 2W -- we'll use it to com
 
 Used a little USB power monitor to see how many watts each dev board used at idle and (if possible) running stress-ng from s-tui. (`s-tui` installed with `sudo apt install s-tui` and run with sudo to stress test.)
 
-| SBC                      | Idle watts (with wifi on) | Idle watts (with ethernet)                          | s-tui stress test watts     |
-| ---                      | ---                       | ---                                                 | ---                         |
-| Pi Zero 2W               | 1.5 watts                 | N/A                                                 | 3.3 watts                   |
-| RPi 3                    | N/A                       | 2.2 watts                                           |                             |
-| Mango Pi MQ Pro (RISC-V) |                           |                                                     |                             |
-| Milk V Duo               | N/A no wifi               | 1.2 watts (don't have ethernet expansion board yet) | N/A can't install currently |
+| SBC                           | Idle watts (with wifi on) | Idle watts (with ethernet)              | s-tui stress test watts     |
+| ---                           | ---                       | ---                                     | ---                         |
+| Pi Zero 2W                    | 1.5 watts                 | N/A                                     | 3.3 watts                   |
+| RPi 3                         | N/A                       | 2.2 watts                               |                             |
+| Mango Pi MQ Pro (RISC-V)      |                           |                                         |                             |
+| Milk V Duo                    | N/A no wifi               | 1.2 watts (seems suspiciously high now) | N/A can't install currently |
+| Milk V Duo (w/ carrier board) | N/A no wifi               | 0.3-0.4 watts                           | N/A can't install currently |
 
+
+Wireless access point power draw:
+* GL.iNet GL-AR300M16-Ext travel router: 1.6-2.2 watts.
+  * This will likely be responsible for higher draw than the Raspberry Pi and limit our battery life.
 
 ## License
 
