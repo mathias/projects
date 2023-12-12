@@ -6,11 +6,11 @@ Here's a restatement of what the goals are:
 
 I intend to build a "solar ebook library" and neighborhood server for my yard. The hardware will be:
 
-* 1 spare UPS battery (unbranded), 9Ah.
+* 1 spare UPS battery (unbranded), 12VDC 9Ah.
 * 1 [MPPT Solar Charger for intelligent devices](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/) 
 * 1 [Renogy 50 watt solar panel](https://www.renogy.com/50-watt-12-volt-monocrystalline-solar-panel/)
-* 1 GL.iNet GL-AR300M16-Ext travel router
-* 1 Raspberry Pi Zero 2W -- originally I was going to use a Raspberry Pi 3 connected via ethernet, but I had concerns about power usage and still wanted multicore to run web applications rather than just serve static files
+* 1 [GL.iNet GL-AR300M16-Ext travel router](https://www.gl-inet.com/products/gl-ar300m/)
+* 1 [Raspberry Pi Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) -- originally I was going to use a Raspberry Pi 3 connected via ethernet, but I had concerns about power usage and still wanted multicore to run web applications rather than just serve static files
   * A "high endurance" micro SD card with sufficient storage. I wanted to avoid having the SD card "wear out"
 * Terminal blocks: Glarks 70Pcs set
 * Outdoor junction box with hinged cover (waterproof/dustproof) -- to fit the UPS battery
