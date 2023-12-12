@@ -2,7 +2,7 @@
 
 See https://github.com/mathias/projects/issues/3 and previous work described in the [README section on the Solar Webserver project](https://github.com/mathias/projects#solar-webserver-project).
 
-Since the READMe might change or the Issue may get closed, here's a restatement of what the goals are:
+Here's a restatement of what the goals are:
 
 I intend to build a "solar ebook library" and neighborhood server for my yard. The hardware will be:
 
@@ -15,6 +15,14 @@ I intend to build a "solar ebook library" and neighborhood server for my yard. T
 * Terminal blocks: Glarks 70Pcs set
 * Outdoor junction box with hinged cover (waterproof/dustproof) -- to fit the UPS battery
 
+Some other future plans for the software that will be served by the webserver, besides an ebook library:
+
+* A static site landing page that explains the server, links to various places on the server, and explains the no-log-retention policies of this particular server.
+* A wiki engine for community bulletin-board and information sharing
+* Possibly a neighborhood calendar. Prior art: https://gancia.org/
+* A tool lending library app (may just be a page on the wiki?)
+* Real time chat like Rocket chat?
+
 ## Raspberry Pi setup
 
 Download Raspbian 64-bit Lite and flash it using something like Popsicle USB Flasher or the Raspberry Pi Imager onto the microSD card. Connect the Raspberry Pi Zero 2W to a monitor and keyboard for initial setup. (Micro HDMI cable to monitor's HDMI.) Connect the Raspberry Pi Zero 2W to USB power to boot it.
@@ -23,7 +31,7 @@ The Raspberry Pi will generate SSH keys, resize the disk to fill the space, and 
 
 The Pi will prompt you to create a user and set its password. Log in as that user.
 
-Use `nmcli` to set up the wifi connection to the real house wifi for the time being.
+Use `nmcli` to set up the wifi connection to a real wifi network that is connected to the internet, for the time being.
 
 ```
 nmcli dev status
@@ -44,7 +52,7 @@ sudo raspi-config
 It should pick up at least Linux kernel 6.1.x or later, and whatever Pi firmware goes with that kernel.
 
 In raspi-config:
-* Advanced - Resize filesystem (just in case it hsan't done it)
+* Advanced - Resize filesystem (just in case it hasn't done it)
 * Update
 * Interface Options - SSH - Enable
 
