@@ -115,6 +115,9 @@ Wireless access point power draw:
 * GL.iNet GL-AR300M16-Ext travel router: 1.6-2.2 watts.
   * This will likely be responsible for higher draw than the Raspberry Pi and limit our battery life.
 
+### Self-documenting hardware + software
+This project should implement the ["RNote self-documenting" idea](https://github.com/mathias/projects/issues/3#issuecomment-1802555070) where the webserver contains a download link for an archive of all 3D design files, all firmware, and a doc on how to compile the firmware and how to build the hardware. (A copy of this guide and other guides written.)
+
 ## License
 
 This work is licensed under [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
