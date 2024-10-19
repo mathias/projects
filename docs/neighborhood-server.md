@@ -80,6 +80,26 @@ Tools needed for setting up the basic webserver: `sudo apt-get install vim git`
 
 During development I also installed the following for more tooling: `sudo apt install htop tmux` and ran the setup script from https://rustup.rs
 
+#### Server setup
+
+```
+sudo apt remove apache2
+sudo apt autoremove
+```
+
+Install Caddy per instructions: https://caddyserver.com/docs/install#debian-ubuntu-raspbian
+
+Then edit `sudo vim /etc/caddy/Caddyfile` enable:
+```
+  reverse_proxy localhost:3000
+```
+
+```
+sudo systemctl reload caddy
+```
+
+TODO: This may not be the server we end up using! Nginx needs config, though.
+
 ### Verify GPIO with Rust
 
 Cross-compile https://github.com/mathias/pi-makerpower-gpio and copy the executable to the Raspberry Pi. Verify the I2C connections and alert pin are connected to the MakerPower board, then run it. (Compiling on the pi device takes too long.)
