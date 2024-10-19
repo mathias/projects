@@ -82,7 +82,7 @@ During development I also installed the following for more tooling: `sudo apt in
 
 ### Verify GPIO with Rust
 
-Cross-compile https://github.com/mathias/pi-makerpower-gpio and copy the executable to the Raspberry Pi. Verify the I2C connections and alert pin are connected to the MakerPower board, then run it.
+Cross-compile https://github.com/mathias/pi-makerpower-gpio and copy the executable to the Raspberry Pi. Verify the I2C connections and alert pin are connected to the MakerPower board, then run it. (Compiling on the pi device takes too long.)
 
 TODO: finish the converters for `pi-makerpower-gpio` so that we get actual values for voltages, etc.
 
@@ -95,6 +95,12 @@ TODO
 3D print a case for easier mounting of the Raspberry Pi Zero 2W: https://www.printables.com/model/34849-raspberry-pi-zero-slim-case-with-mounting-tabs
 
 Solder the 40-pin GPIO header to the Raspberry Pi Zero 2W -- we'll use it to communicate with the solar charger PCB later.
+
+Connect the MakerPower to GPIO based on this guide: https://github.com/danjulio/MPPT-Solar-Charger/blob/master/hardware/connection_diagrams.pdf
+
+##  Server setup
+
+TODO
 
 ## Errata
 
