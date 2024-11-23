@@ -17,8 +17,7 @@ Planning to grow to double the panels and another battery, eventually.
 
 ### Project log
 * 2023-03-14 heavy (130lb!) battery was delivered.
-
-**Current status**: Waiting on me.
+* 2024-11-22 no longer planned. TODO remove from README.
 
 ## Solar webserver project
 * 1 spare UPS battery (unbranded), 9Ah.
@@ -45,6 +44,7 @@ Inspired by getting the spare UPS battery which didn't fit my UPS. I could not r
 
 I am using a [RockPro64 board](https://www.pine64.org/rockpro64/), a SATA riser, and a [hot swap SATA cage](https://www.rosewill.com/rosewill-rsv-sata-cage-34-hard-disk-drive-cage/p/9SIA072GJ92556) to build a small, low-power NAS box.
 
+**Current status**: canceled due to power issues for powering both HDDs and the RockPro64 board. 
 
 
 ## License
